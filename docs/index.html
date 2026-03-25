@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>UniBucket — Universal Multi-Cloud Object Storage Manager</title>
+  <meta name="description"
+    content="UniBucket is a modern, cross-platform desktop app that lets you manage AWS S3, Google Cloud Storage, and S3-compatible services from one beautiful interface." />
+  <meta name="keywords"
+    content="cloud storage, S3, Google Cloud Storage, object storage, desktop app, file manager, multi-cloud" />
+  <meta property="og:title" content="UniBucket — Universal Multi-Cloud Object Storage Manager" />
+  <meta property="og:description" content="Manage all your cloud buckets from one beautiful desktop app." />
+  <meta property="og:image" content="images/splash.png" />
+  <meta property="og:type" content="website" />
+  <link rel="icon" type="image/png" href="images/icon.png" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+  <!-- ===== Navigation ===== -->
+  <nav class="nav" id="nav">
+    <div class="container">
+      <a href="#" class="nav-brand">
+        <img src="images/icon.png" alt="UniBucket icon" />
+        UniBucket
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#screenshots">Screenshots</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#tech">Tech Stack</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="https://github.com/LinkFuture/UniBucket-Releases" target="_blank" rel="noopener" class="nav-cta">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path
+                d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
+            </svg>
+            GitHub
+          </a></li>
+      </ul>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+          stroke-linecap="round">
+          <line x1="3" y1="6" x2="21" y2="6" />
+          <line x1="3" y1="12" x2="21" y2="12" />
+          <line x1="3" y1="18" x2="21" y2="18" />
+        </svg>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ===== Hero ===== -->
+  <section class="hero" id="hero">
+    <div class="hero-content">
+      <div class="hero-badge">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+          <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" />
+        </svg>
+        The most seamless cloud storage browser for Mac & Windows with native editing.
+      </div>
+      <img src="images/icon.png" alt="UniBucket" class="hero-icon" />
+      <h1>One App for<br /><span class="gradient-text">All Your Cloud Buckets</span></h1>
+      <p class="hero-subtitle">Manage AWS S3, Google Cloud Storage, and S3-compatible services from a single, beautiful
+        desktop interface.</p>
+      <div class="hero-actions">
+        <a href="https://github.com/LinkFuture/UniBucket-Releases/releases" class="btn btn-primary" target="_blank"
+          rel="noopener">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+            <polyline points="7 10 12 15 17 10" />
+            <line x1="12" y1="15" x2="12" y2="3" />
+          </svg>
+          Download Now
+        </a>
+        <a href="https://github.com/LinkFuture/UniBucket-Releases" class="btn btn-secondary" target="_blank"
+          rel="noopener">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round">
+            <path
+              d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
+          </svg>
+          View on GitHub
+        </a>
+      </div>
+      <div class="hero-platforms">
+        <span class="platform-badge">
+          <svg viewBox="0 0 24 24" fill="currentColor">
+            <path
+              d="M3 5.557l7.357-1.002.003 7.1-7.354.042L3 5.557zm7.354 6.853l.006 7.108-7.354-1.012v-6.138l7.348.042zm.888-7.903L21.56 3v8.562l-10.318.08V4.507zM21.565 12.6l-.005 8.395-10.32-1.46-.015-6.98 10.34.045z" />
+          </svg>
+          Windows
+        </span>
+        <span class="platform-badge">
+          <svg viewBox="0 0 24 24" fill="currentColor">
+            <path
+              d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z" />
+          </svg>
+          macOS
+        </span>
+        <span class="platform-badge">
+          <svg viewBox="0 0 24 24" fill="currentColor">
+            <path
+              d="M12.504 0c-.155 0-.311.004-.465.012C8.11.28 5.14 2.7 4.14 5.96c-.36 1.18-.54 2.42-.54 3.68 0 .88.08 1.74.26 2.56l.22.84c.38 1.22.98 2.36 1.74 3.36.34.46.72.88 1.14 1.28.46.42.94.78 1.46 1.1l1.62.94c.08.04.22.14.36.24.14.1.26.2.36.28.2.16.34.28.42.34.08.08.12.12.14.16a.15.15 0 0 1 .04.08v4.04c0 .16.06.3.14.42.1.12.24.18.4.18.08 0 .18-.02.24-.06l4.44-2.56.52-.3c.12-.08.22-.14.32-.2.26-.16.44-.3.56-.42.08-.08.14-.16.18-.24.04-.1.06-.2.06-.3v-3.76c0-.04 0-.1.02-.14 0-.06.02-.1.04-.14a.82.82 0 0 1 .08-.14c.12-.16.34-.38.66-.6l1.72-1c.48-.3.94-.62 1.34-1 .42-.4.8-.84 1.14-1.3.76-1 1.36-2.14 1.74-3.36l.22-.84c.18-.82.26-1.68.26-2.56 0-1.26-.18-2.5-.54-3.68C18.86 2.7 15.89.28 11.96.012a8.6 8.6 0 0 0-.456-.012z" />
+          </svg>
+          Linux
+        </span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Screenshots ===== -->
+  <section class="screenshots" id="screenshots">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">See It in Action</span>
+        <h2>Beautiful, Intuitive Interface</h2>
+        <p>Switch between dark and light themes, browse files in grid or list view, and preview content right inside the
+          app.</p>
+      </div>
+      <div class="carousel reveal">
+        <div class="carousel-track" id="carousel">
+          <div class="carousel-slide active">
+            <img src="images/Browse.png" loading="lazy" alt="Browse files" />
+            <div class="carousel-caption">Browse files with an intuitive layout</div>
+          </div>
+          <div class="carousel-slide">
+            <img src="images/Browse%20Grid%20View%20dark%20view.png" loading="lazy" alt="Dark Theme Grid View" />
+            <div class="carousel-caption">Elegant dark theme support for comfortable viewing</div>
+          </div>
+          <div class="carousel-slide">
+            <img src="images/Browse%20Grid%20View.png" loading="lazy" alt="Grid View" />
+            <div class="carousel-caption">Visually organize your cloud files with Grid View</div>
+          </div>
+          <div class="carousel-slide">
+            <img src="images/Accounts.png" loading="lazy" alt="Accounts management" />
+            <div class="carousel-caption">Manage multiple cloud accounts in one place</div>
+          </div>
+          <div class="carousel-slide">
+            <img src="images/Add%20cloud%20account.png" loading="lazy" alt="Add cloud account" />
+            <div class="carousel-caption">Easily add new AWS S3, Google Cloud, or S3-compatible accounts</div>
+          </div>
+          <div class="carousel-slide">
+            <img src="images/Download%20and%20Upload.png" loading="lazy" alt="Download and Upload" />
+            <div class="carousel-caption">Seamlessly download and upload your files</div>
+          </div>
+          <div class="carousel-slide">
+            <img src="images/Image%20previewer.png" loading="lazy" alt="Image previewer" />
+            <div class="carousel-caption">Built-in high quality image previewer</div>
+          </div>
+          <div class="carousel-slide">
+            <img src="images/JS%20editor.png" loading="lazy" alt="JavaScript Editor" />
+            <div class="carousel-caption">Edit JavaScript files directly within the app</div>
+          </div>
+          <div class="carousel-slide">
+            <img src="images/Json%20editor.png" loading="lazy" alt="JSON Editor" />
+            <div class="carousel-caption">View and format JSON files effortlessly</div>
+          </div>
+          <div class="carousel-slide">
+            <img src="images/Markdown%20editor.png" loading="lazy" alt="Markdown Editor" />
+            <div class="carousel-caption">Preview and edit Markdown documents</div>
+          </div>
+          <div class="carousel-slide">
+            <img src="images/Tasks.png" loading="lazy" alt="Task Manager" />
+            <div class="carousel-caption">Track your background uploads and downloads using Tasks manager</div>
+          </div>
+          <div class="carousel-slide">
+            <img src="images/Batch%20file%20metadata%20editor.png" loading="lazy" alt="Batch file metadata editor" />
+            <div class="carousel-caption">Effortlessly update and manage file metadata in bulk</div>
+          </div>
+          <div class="carousel-slide">
+            <img src="images/Settings.png" loading="lazy" alt="Settings" />
+            <div class="carousel-caption">Customize your app preferences in Settings</div>
+          </div>
+        </div>
+        <div class="carousel-nav" id="carouselNav">
+          <button class="carousel-dot active" data-index="0" aria-label="Slide 1"></button>
+          <button class="carousel-dot" data-index="1" aria-label="Slide 2"></button>
+          <button class="carousel-dot" data-index="2" aria-label="Slide 3"></button>
+          <button class="carousel-dot" data-index="3" aria-label="Slide 4"></button>
+          <button class="carousel-dot" data-index="4" aria-label="Slide 5"></button>
+          <button class="carousel-dot" data-index="5" aria-label="Slide 6"></button>
+          <button class="carousel-dot" data-index="6" aria-label="Slide 7"></button>
+          <button class="carousel-dot" data-index="7" aria-label="Slide 8"></button>
+          <button class="carousel-dot" data-index="8" aria-label="Slide 9"></button>
+          <button class="carousel-dot" data-index="9" aria-label="Slide 10"></button>
+          <button class="carousel-dot" data-index="10" aria-label="Slide 11"></button>
+          <button class="carousel-dot" data-index="11" aria-label="Slide 12"></button>
+          <button class="carousel-dot" data-index="12" aria-label="Slide 13"></button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Features ===== -->
+  <section class="features" id="features">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">Features</span>
+        <h2>Everything You Need in One Place</h2>
+        <p>A unified toolkit for cloud storage management — designed for developers and teams.</p>
+      </div>
+      <div class="features-grid">
+
+        <div class="feature-card reveal">
+          <div class="feature-icon teal">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 14.899A7 7 0 1 1 15.71 8h1.79a4.5 4.5 0 0 1 2.5 8.242" />
+              <path d="M12 12v9" />
+              <path d="m8 17 4 4 4-4" />
+            </svg>
+          </div>
+          <h3>Multi-Cloud Support</h3>
+          <p>Connect AWS S3, Google Cloud Storage, and any S3-compatible service. Switch between providers without
+            friction.</p>
+        </div>
+
+        <div class="feature-card reveal">
+          <div class="feature-icon blue">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <rect width="7" height="7" x="3" y="3" rx="1" />
+              <rect width="7" height="7" x="14" y="3" rx="1" />
+              <rect width="7" height="7" x="14" y="14" rx="1" />
+              <rect width="7" height="7" x="3" y="14" rx="1" />
+            </svg>
+          </div>
+          <h3>Visual File Browser</h3>
+          <p>Toggle between grid and list views. Breadcrumb navigation and pagination make deep directory traversal
+            simple.</p>
+        </div>
+
+        <div class="feature-card reveal">
+          <div class="feature-icon gold">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z" />
+              <circle cx="12" cy="12" r="3" />
+            </svg>
+          </div>
+          <h3>Built-in Previewer</h3>
+          <p>Preview images, PDFs, text files, code, Word docs, and spreadsheets directly inside the app — no downloads
+            needed.</p>
+        </div>
+
+        <div class="feature-card reveal">
+          <div class="feature-icon green">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+              <polyline points="17 8 12 3 7 8" />
+              <line x1="12" y1="3" x2="12" y2="15" />
+            </svg>
+          </div>
+          <h3>Reliable Transfers</h3>
+          <p>Background task management ensures your uploads and downloads complete reliably — even for large files.</p>
+        </div>
+
+        <div class="feature-card reveal">
+          <div class="feature-icon purple">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="4" />
+              <path d="M12 2v2" />
+              <path d="M12 20v2" />
+              <path d="m4.93 4.93 1.41 1.41" />
+              <path d="m17.66 17.66 1.41 1.41" />
+              <path d="M2 12h2" />
+              <path d="M20 12h2" />
+              <path d="m6.34 17.66-1.41 1.41" />
+              <path d="m19.07 4.93-1.41 1.41" />
+            </svg>
+          </div>
+          <h3>Dark &amp; Light Mode</h3>
+          <p>Full dark and light theme support. The app follows your system preference — or you can manually override
+            it.</p>
+        </div>
+
+        <div class="feature-card reveal">
+          <div class="feature-icon teal">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+              <path d="m9 12 2 2 4-4" />
+            </svg>
+          </div>
+          <h3>Secure Credentials</h3>
+          <p>Your cloud credentials are securely stored locally on your machine. Nothing is sent to third-party servers.
+          </p>
+        </div>
+
+        <div class="feature-card reveal">
+          <div class="feature-icon blue">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="16 18 22 12 16 6"></polyline>
+              <polyline points="8 6 2 12 8 18"></polyline>
+            </svg>
+          </div>
+          <h3>Integrated Code Editor</h3>
+          <p>Powered by the technology behind VS Code, featuring IntelliSense, advanced validation, and basic syntax
+            colorization.</p>
+        </div>
+
+        <div class="feature-card reveal">
+          <div class="feature-icon gold">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
+              <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
+            </svg>
+          </div>
+          <h3>Markdown Editor &amp; Previewer</h3>
+          <p>Write, edit, and preview Markdown documents in real-time without leaving your storage workflow.</p>
+        </div>
+
+        <div class="feature-card reveal">
+          <div class="feature-icon green">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path>
+              <path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path>
+            </svg>
+          </div>
+          <h3>Batch Metadata Editor</h3>
+          <p>Effortlessly update and manage file metadata in bulk to organize large datasets efficiently.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Providers ===== -->
+  <section class="providers">
+    <div class="container">
+      <p class="providers-subtitle reveal">Works with your favorite cloud providers</p>
+      <div class="providers-logos reveal">
+        <div class="provider-logo">
+          <svg viewBox="0 0 24 24" fill="currentColor">
+            <path
+              d="M7.63 11.92L4.38 6.94l3.75-.35.5 5.33zm8.74 0l-.5-5.33 3.75.35-3.25 4.98zM12 3.73l-2.88.27L12 10.45 14.88 4l-2.88-.27zm-8.88 9.2l5.97 5.57-.47-5.04-5.5-.53zm17.76 0l-5.5.53-.47 5.04 5.97-5.57zM12 13.27L9.72 18h4.56L12 13.27z" />
+          </svg>
+          AWS S3
+        </div>
+        <div class="provider-logo">
+          <svg viewBox="0 0 24 24" fill="currentColor">
+            <path
+              d="M12 3L4 7.64v8.72L12 21l8-4.64V7.64L12 3zm0 1.42l6.27 3.64L12 11.7 5.73 8.06 12 4.42zM5.45 9.28L11.27 13v6.3L5.45 15.6V9.28zm13.1 0v6.32l-5.82 3.7V13l5.82-3.72z" />
+          </svg>
+          Google Cloud Storage
+        </div>
+        <div class="provider-logo">
+          <svg viewBox="0 0 24 24" fill="currentColor">
+            <path
+              d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm-1-13h2v6h-2zm0 8h2v2h-2z" />
+          </svg>
+          S3-Compatible
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Tech Stack ===== -->
+  <section class="tech" id="tech">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">Built With</span>
+        <h2>Modern Tech Stack</h2>
+        <p>Powered by a robust, modern stack trusted by millions of developers worldwide.</p>
+      </div>
+      <div class="tech-grid reveal">
+        <div class="tech-badge">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22">
+            <path d="M12 2L1 21h22L12 2zm0 3.99L19.53 19H4.47L12 5.99z" />
+          </svg>
+          Electron
+        </div>
+        <div class="tech-badge">
+          <svg viewBox="0 0 24 24" fill="#61DAFB" width="22" height="22">
+            <circle cx="12" cy="12" r="2.4" />
+            <ellipse cx="12" cy="12" rx="10.5" ry="4" fill="none" stroke="#61DAFB" stroke-width="1" />
+            <ellipse cx="12" cy="12" rx="10.5" ry="4" fill="none" stroke="#61DAFB" stroke-width="1"
+              transform="rotate(60 12 12)" />
+            <ellipse cx="12" cy="12" rx="10.5" ry="4" fill="none" stroke="#61DAFB" stroke-width="1"
+              transform="rotate(120 12 12)" />
+          </svg>
+          React
+        </div>
+        <div class="tech-badge">
+          <svg viewBox="0 0 24 24" fill="#3178C6" width="22" height="22">
+            <path
+              d="M1.125 0C.502 0 0 .502 0 1.125v21.75C0 23.498.502 24 1.125 24h21.75c.623 0 1.125-.502 1.125-1.125V1.125C24 .502 23.498 0 22.875 0H1.125zm17.363 9.75c.612 0 1.154.037 1.627.111a6.38 6.38 0 0 1 1.306.34v2.458a3.95 3.95 0 0 0-.643-.361 5.093 5.093 0 0 0-.717-.26 5.453 5.453 0 0 0-1.426-.2c-.3 0-.573.028-.819.086a2.1 2.1 0 0 0-.623.242c-.17.104-.3.229-.393.374a.888.888 0 0 0-.14.49c0 .196.053.373.156.529.104.156.252.304.443.444s.42.276.69.394.57.232.89.34c.39.13.753.274 1.09.433.337.158.632.347.882.566.25.22.445.48.585.782.14.3.21.662.21 1.084 0 .508-.105.944-.316 1.308-.21.364-.498.662-.862.894-.364.232-.8.402-1.302.51-.502.108-1.043.162-1.623.162-.734 0-1.39-.06-1.967-.18a5.22 5.22 0 0 1-1.566-.545v-2.636a5.06 5.06 0 0 0 .774.498 5.96 5.96 0 0 0 .876.364c.312.106.63.18.954.222.324.042.614.063.87.063.298 0 .564-.024.797-.072.232-.048.424-.12.574-.214.15-.094.264-.212.342-.354a.944.944 0 0 0 .118-.468c0-.2-.062-.383-.184-.544a2.007 2.007 0 0 0-.504-.426 5.648 5.648 0 0 0-.756-.366 22.14 22.14 0 0 0-.944-.358c-.37-.126-.72-.27-1.048-.43a3.85 3.85 0 0 1-.862-.584c-.244-.23-.436-.5-.576-.812a2.703 2.703 0 0 1-.21-1.096c0-.466.105-.878.314-1.236.21-.358.49-.66.84-.908a4.131 4.131 0 0 1 1.228-.584 5.295 5.295 0 0 1 1.48-.202zm-9.608.114v1.9H5.543v8.487H3.535v-8.487H.198v-1.9h8.682z"
+              transform="scale(.875) translate(1.7 1.7)" />
+          </svg>
+          TypeScript
+        </div>
+        <div class="tech-badge">
+          <svg viewBox="0 0 24 24" fill="#646CFF" width="22" height="22">
+            <path d="m12.009 1.008 10.894 6.287v12.574L12.009 23.16 1.116 19.869V7.295l10.893-6.287z" />
+          </svg>
+          Vite
+        </div>
+        <div class="tech-badge">
+          <svg viewBox="0 0 24 24" fill="#06B6D4" width="22" height="22">
+            <path
+              d="M12.001 4.8c-3.2 0-5.2 1.6-6 4.8 1.2-1.6 2.6-2.2 4.2-1.8.913.228 1.565.89 2.288 1.624C13.666 10.618 15.027 12 18.001 12c3.2 0 5.2-1.6 6-4.8-1.2 1.6-2.6 2.2-4.2 1.8-.913-.228-1.565-.89-2.288-1.624C16.337 6.182 14.976 4.8 12.001 4.8zm-6 7.2c-3.2 0-5.2 1.6-6 4.8 1.2-1.6 2.6-2.2 4.2-1.8.913.228 1.565.89 2.288 1.624 1.177 1.194 2.538 2.576 5.512 2.576 3.2 0 5.2-1.6 6-4.8-1.2 1.6-2.6 2.2-4.2 1.8-.913-.228-1.565-.89-2.288-1.624C10.337 13.382 8.976 12 6.001 12z" />
+          </svg>
+          TailwindCSS
+        </div>
+        <div class="tech-badge">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22">
+            <path
+              d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z" />
+          </svg>
+          Shadcn UI
+        </div>
+        <div class="tech-badge">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22">
+            <path
+              d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm0 2c1.33 0 2.57.36 3.62 1H8.38A7.94 7.94 0 0 1 12 4zm-3 3h6l-3 5.5L9 7zm-4.97 3A7.9 7.9 0 0 1 5.6 7.5L8.6 13l-5.56-1.46c-.01-.18-.04-.36-.04-.54 0-.34.02-.68.03-1zm.57 3l5.5 1.45L6.55 17A7.93 7.93 0 0 1 4.6 13zm2.8 5h4.6L12 16l-2.8 3c-.4-.3-.78-.63-1.13-1h.53zM12 20c-1.2 0-2.32-.3-3.32-.83L12 14.5l3.32 4.67c-1 .53-2.12.83-3.32.83zm5.45-3l-3.55-2.55 5.5-1.45a7.93 7.93 0 0 1-1.95 4zm1.52-5c0 .18-.03.36-.04.54L13.4 13l3-5.5a7.9 7.9 0 0 1 1.57 2.5c.01.32.03.66.03 1z" />
+          </svg>
+          Zustand
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Download CTA ===== -->
+  <section class="download" id="download">
+    <div class="container">
+      <div class="download-content reveal">
+        <h2>Ready to simplify your cloud storage?</h2>
+        <p>Download UniBucket for free and manage all your buckets from one place.</p>
+        <div class="download-buttons">
+          <a href="https://github.com/LinkFuture/UniBucket-Releases/releases" class="download-btn" target="_blank"
+            rel="noopener">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M3 5.557l7.357-1.002.003 7.1-7.354.042L3 5.557zm7.354 6.853l.006 7.108-7.354-1.012v-6.138l7.348.042zm.888-7.903L21.56 3v8.562l-10.318.08V4.507zM21.565 12.6l-.005 8.395-10.32-1.46-.015-6.98 10.34.045z" />
+            </svg>
+            <span>Windows<span class="btn-small">Windows 10 / 11</span></span>
+          </a>
+          <a href="https://github.com/LinkFuture/UniBucket-Releases/releases" class="download-btn" target="_blank"
+            rel="noopener">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z" />
+            </svg>
+            <span>macOS<span class="btn-small">Apple Silicon &amp; Intel</span></span>
+          </a>
+          <a href="https://github.com/LinkFuture/UniBucket-Releases/releases" class="download-btn" target="_blank"
+            rel="noopener">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M12.504 0c-.155 0-.311.004-.465.012C8.11.28 5.14 2.7 4.14 5.96c-.36 1.18-.54 2.42-.54 3.68 0 .88.08 1.74.26 2.56l.22.84c.38 1.22.98 2.36 1.74 3.36.34.46.72.88 1.14 1.28.46.42.94.78 1.46 1.1l1.62.94c.08.04.22.14.36.24.14.1.26.2.36.28.2.16.34.28.42.34.08.08.12.12.14.16a.15.15 0 0 1 .04.08v4.04c0 .16.06.3.14.42.1.12.24.18.4.18.08 0 .18-.02.24-.06l4.44-2.56.52-.3c.12-.08.22-.14.32-.2.26-.16.44-.3.56-.42.08-.08.14-.16.18-.24.04-.1.06-.2.06-.3v-3.76c0-.04 0-.1.02-.14 0-.06.02-.1.04-.14a.82.82 0 0 1 .08-.14c.12-.16.34-.38.66-.6l1.72-1c.48-.3.94-.62 1.34-1 .42-.4.8-.84 1.14-1.3.76-1 1.36-2.14 1.74-3.36l.22-.84c.18-.82.26-1.68.26-2.56 0-1.26-.18-2.5-.54-3.68C18.86 2.7 15.89.28 11.96.012a8.6 8.6 0 0 0-.456-.012z" />
+            </svg>
+            <span>Linux<span class="btn-small">AppImage, Snap, deb</span></span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Footer ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-brand">
+        <img src="images/icon.png" alt="UniBucket" />
+        UniBucket
+      </div>
+      <ul class="footer-links">
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="privacy.html">Privacy Policy</a></li>
+        <li><a href="https://github.com/LinkFuture/UniBucket-Releases" target="_blank" rel="noopener">GitHub</a></li>
+        <li><a href="https://github.com/LinkFuture/UniBucket-Releases/releases" target="_blank"
+            rel="noopener">Releases</a></li>
+        <li><a href="https://github.com/LinkFuture/UniBucket-Releases/issues" target="_blank" rel="noopener">Issues</a>
+        </li>
+      </ul>
+      <p class="footer-copy">&copy; 2026 Linkfuture LLC</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

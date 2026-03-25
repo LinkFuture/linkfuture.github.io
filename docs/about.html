@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us — LinkFuture LLC</title>
+  <meta name="description" content="Learn more about LinkFuture LLC and our mission to build intuitive cloud tools." />
+  <link rel="icon" type="image/png" href="images/icon.png" />
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    .content-page {
+      padding: 120px 0 80px;
+      min-height: calc(100vh - 200px);
+    }
+    .content-page h1 {
+      margin-bottom: 30px;
+      font-size: 3rem;
+      text-align: center;
+    }
+    .content-page h2 {
+      margin-top: 40px;
+      margin-bottom: 20px;
+      font-size: 2rem;
+    }
+    .content-page p {
+      font-size: 1.1rem;
+      line-height: 1.8;
+      margin-bottom: 20px;
+      color: var(--text-off);
+    }
+    .content-container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- ===== Navigation ===== -->
+  <nav class="nav" id="nav">
+    <div class="container">
+      <a href="index.html" class="nav-brand">
+        <img src="images/icon.png" alt="UniBucket icon" />
+        UniBucket
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html#screenshots">Screenshots</a></li>
+        <li><a href="index.html#features">Features</a></li>
+        <li><a href="index.html#tech">Tech Stack</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="https://github.com/LinkFuture/UniBucket-Releases" target="_blank" rel="noopener" class="nav-cta">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path
+                d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
+            </svg>
+            GitHub
+          </a></li>
+      </ul>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+          stroke-linecap="round">
+          <line x1="3" y1="6" x2="21" y2="6" />
+          <line x1="3" y1="12" x2="21" y2="12" />
+          <line x1="3" y1="18" x2="21" y2="18" />
+        </svg>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ===== About Content ===== -->
+  <main class="content-page">
+    <div class="content-container reveal">
+      <h1>About <span class="gradient-text">LinkFuture LLC</span></h1>
+      
+      <p>Located in the heart of the Pacific Northwest—Bothell, Washington—LinkFuture LLC is an independent software studio dedicated to building high-performance, developer-centric tools.</p>
+
+      <h2>Our Mission</h2>
+      <p>We believe that cloud management shouldn't feel like a chore. Our goal is to bridge the gap between complex cloud infrastructures and a seamless desktop experience. We build the tools we wanted to use ourselves: software that is fast, intuitive, and stays out of your way.</p>
+
+      <h2>Security &amp; Trust First</h2>
+      <p>As developers, we understand that your cloud credentials are your "keys to the kingdom." That’s why we architect our flagship product, UniBucket, with a "Local-First" philosophy. Your keys never touch our servers; they stay encrypted on your machine, exactly where they belong.</p>
+
+      <p>When you choose a LinkFuture product, you're not just getting a tool—you're getting a commitment to privacy, performance, and professional-grade engineering.</p>
+    </div>
+  </main>
+
+  <!-- ===== Footer ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-brand">
+        <img src="images/icon.png" alt="UniBucket" />
+        UniBucket
+      </div>
+      <ul class="footer-links">
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="privacy.html">Privacy Policy</a></li>
+        <li><a href="https://github.com/LinkFuture/UniBucket-Releases" target="_blank" rel="noopener">GitHub</a></li>
+        <li><a href="https://github.com/LinkFuture/UniBucket-Releases/releases" target="_blank"
+            rel="noopener">Releases</a></li>
+        <li><a href="https://github.com/LinkFuture/UniBucket-Releases/issues" target="_blank" rel="noopener">Issues</a>
+        </li>
+      </ul>
+      <p class="footer-copy">&copy; 2026 Linkfuture LLC</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
