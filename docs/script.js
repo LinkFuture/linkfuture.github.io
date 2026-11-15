@@ -89,4 +89,63 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
   });
+
+  // ---------- Auto-resolve latest release download URLs ----------
+  initDownloadButtons();
 });
+
+/**
+ * Automatically fetch the latest release assets from GitHub and bind direct download
+ * links to Windows, macOS, and Linux download buttons.
+ */
+function initDownloadButtons() {
+  const winBtn = document.getElementById('download-win');
+  const macBtn = document.getElementById('download-mac');
+  const linuxBtn = document.getElementById('download-linux');
+
+  // If download buttons are not present on this page, exit early
+  if (!winBtn && !macBtn && !linuxBtn) return;
+
+  const RELEASES_API = 'https://api.github.com/repos/LinkFuture/UniBucket-Releases/releases/latest';
+
+  fetch(RELEASES_API)
+    .then(res => {
+      if (!res.ok) throw new Error(`HTTP ${res.status}`);
+      return res.json();
+    })
+    .then(release => {
+      const assets = release.assets || [];
+      if (!assets.length) return;
+
+      // Helper to find asset by pattern
+      const findAssetUrl = (predicate) => {
+        const item = assets.find(predicate);
+        return item ? item.browser_download_url : null;
+      };
+
+      // Windows: prefer x64 install.exe
+      const winUrl =
+        findAssetUrl(a => a.name.includes('win-x64') && a.name.endsWith('-install.exe')) ||
+        findAssetUrl(a => a.name.includes('win') && a.name.endsWith('-install.exe')) ||
+        findAssetUrl(a => a.name.includes('win') && a.name.endsWith('.exe') && !a.name.endsWith('.blockmap'));
+
+      // macOS: detect user's client platform if possible, default to arm64 or x64 dmg
+      const isIntelMac = navigator.userAgent && navigator.userAgent.includes('Intel Mac');
+      const macArmUrl = findAssetUrl(a => a.name.includes('mac-arm64') && a.name.endsWith('.dmg'));
+      const macX64Url = findAssetUrl(a => a.name.includes('mac-x64') && a.name.endsWith('.dmg'));
+      const macUrl = isIntelMac ? (macX64Url || macArmUrl) : (macArmUrl || macX64Url);
+
+      // Linux: prefer AppImage, fallback to deb
+      const linuxUrl =
+        findAssetUrl(a => a.name.endsWith('.AppImage')) ||
+        findAssetUrl(a => a.name.endsWith('.deb'));
+
+      if (winBtn && winUrl) winBtn.href = winUrl;
+      if (macBtn && macUrl) macBtn.href = macUrl;
+      if (linuxBtn && linuxUrl) linuxBtn.href = linuxUrl;
+    })
+    .catch(err => {
+      // Gracefully fall back to the release page link already in href
+      console.warn('Could not auto-resolve direct download links from latest release:', err);
+    });
+}
