@@ -1,6 +1,11 @@
 # UniBucket: Universal Multi-Cloud Object Storage Manager
 
-Manage all your cloud buckets from one beautiful, cross-platform desktop application. UniBucket lets you control AWS S3, Google Cloud Storage, and any S3-compatible service seamlessly from a single unified interface. 
+Manage all your cloud buckets from one beautiful, cross-platform desktop application. UniBucket lets you control AWS S3, Google Cloud Storage, and any S3-compatible service seamlessly from a single unified interface.
+
+> **[Visit Website](https://www.linkfuture.net/unibucket.html)** · **[Download Latest Release](https://github.com/LinkFuture/linkfuture.github.io/releases)** · **[Issues](https://github.com/LinkFuture/linkfuture.github.io/issues)**
+
+![UniBucket File Browser](docs/images/Browse.png)
+![UniBucket Dark Grid View](docs/images/Browse%20Grid%20View%20dark%20view.png)
 
 ---
 
@@ -48,14 +53,21 @@ Powered by a robust, modern stack trusted by millions of developers worldwide, e
 
 ## 💻 Cross-Platform Availability
 
-UniBucket works where you work. Available completely free on:
+UniBucket works where you work. Try it free for 30 days on:
 
-- **Windows** (Windows 10 / 11)
-- **macOS** (Apple Silicon & Intel natively supported)
-- **Linux** (AppImage, Snap, deb)
+- **Windows** (Windows 10 / 11 — x64 & ia32)
+- **macOS** (Apple Silicon `arm64` & Intel `x64`)
+- **Linux** (AppImage, deb, rpm)
 
-[**Download the latest release on GitHub**](https://github.com/LinkFuture/UniBucket-Releases/releases)
+[**Download the latest release on GitHub**](https://github.com/LinkFuture/linkfuture.github.io/releases)
 
 ---
 
-> _UniBucket - Everything you need in one place._
+## 🔑 Trial & Licensing
+
+- **30-Day Free Trial**: Full access to all features — no credit card required.
+- **One-Time Purchase**: No recurring subscription. Unlock permanently with a license key via **[Polar](https://buy.polar.sh/polar_cl_kUsV6vewgustW7Z8kqILKCMUCdCJKwEuduFAS2sFieV)** (also available on the Mac App Store & Microsoft Store).
+
+---
+
+> _UniBucket — Everything you need in one place._
