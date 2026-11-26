@@ -911,17 +911,19 @@ img {
 }
 
 .download-buttons {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 16px;
-  justify-content: center;
-  flex-wrap: wrap;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
 .download-btn {
-  display: inline-flex;
+  display: flex;
   align-items: center;
+  justify-content: center;
   gap: 12px;
-  padding: 16px 32px;
+  padding: 16px 20px;
   border-radius: var(--radius-md);
   background: var(--glass-bg);
   border: 1px solid var(--glass-border);
@@ -944,6 +946,7 @@ img {
 .download-btn svg {
   width: 24px;
   height: 24px;
+  flex-shrink: 0;
 }
 
 .download-btn span {
@@ -1037,6 +1040,11 @@ img {
   .features-grid {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  .download-buttons {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    max-width: 560px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -1085,8 +1093,8 @@ img {
   }
 
   .download-buttons {
-    flex-direction: column;
-    align-items: center;
+    grid-template-columns: 1fr;
+    max-width: 320px;
   }
 
   .footer .container {
