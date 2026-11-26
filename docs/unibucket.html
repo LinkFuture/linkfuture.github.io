@@ -11,7 +11,7 @@
     content="cloud storage, S3, Google Cloud Storage, object storage, desktop app, file manager, multi-cloud" />
   <meta property="og:title" content="UniBucket — Universal Multi-Cloud Object Storage Manager" />
   <meta property="og:description" content="Manage all your cloud buckets from one beautiful desktop app." />
-  <meta property="og:image" content="images/splash.png" />
+  <meta property="og:image" content="https://www.linkfuture.net/images/splash.png" />
   <meta property="og:type" content="website" />
   <link rel="icon" type="image/svg+xml" href="images/linkfuture-favicon.svg" />
   <link rel="stylesheet" href="styles.css" />
@@ -31,16 +31,17 @@
       <ul class="nav-links" id="navLinks">
         <li><a href="#screenshots">Screenshots</a></li>
         <li><a href="#features">Features</a></li>
-        <li><a href="#tech">Tech Stack</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+        <li><a href="#faq">FAQ</a></li>
         <li><a href="about.html">About Us</a></li>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="https://github.com/LinkFuture/UniBucket-Releases" target="_blank" rel="noopener" class="nav-cta">
+        <li><a href="#download" class="nav-cta">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
               stroke-linecap="round" stroke-linejoin="round">
-              <path
-                d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+              <polyline points="7 10 12 15 17 10" />
+              <line x1="12" y1="15" x2="12" y2="3" />
             </svg>
-            GitHub
+            Download
           </a></li>
       </ul>
       <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
@@ -61,15 +62,14 @@
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
           <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" />
         </svg>
-        The most seamless cloud storage browser for Mac & Windows with native editing.
+        The most seamless cloud storage browser for Mac, Windows &amp; Linux with native editing.
       </div>
       <img src="images/icon.png" alt="UniBucket" class="hero-icon" />
       <h1>One App for<br /><span class="gradient-text">All Your Cloud Buckets</span></h1>
       <p class="hero-subtitle">Manage AWS S3, Google Cloud Storage, and S3-compatible services from a single, beautiful
         desktop interface.</p>
       <div class="hero-actions">
-        <a href="https://github.com/LinkFuture/UniBucket-Releases/releases" class="btn btn-primary" target="_blank"
-          rel="noopener">
+        <a href="#download" class="btn btn-primary">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
             stroke-linejoin="round">
             <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
@@ -78,14 +78,8 @@
           </svg>
           Download Now
         </a>
-        <a href="https://github.com/LinkFuture/UniBucket-Releases" class="btn btn-secondary" target="_blank"
-          rel="noopener">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-            stroke-linejoin="round">
-            <path
-              d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
-          </svg>
-          View on GitHub
+        <a href="#features" class="btn btn-secondary">
+          Explore Features
         </a>
       </div>
       <div class="hero-platforms">
@@ -356,77 +350,123 @@
           Google Cloud Storage
         </div>
         <div class="provider-logo">
-          <svg viewBox="0 0 24 24" fill="currentColor">
-            <path
-              d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm-1-13h2v6h-2zm0 8h2v2h-2z" />
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9Z" />
           </svg>
-          S3-Compatible
+          Cloudflare R2
+        </div>
+        <div class="provider-logo">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <ellipse cx="12" cy="5" rx="9" ry="3" />
+            <path d="M3 5v14a9 3 0 0 0 18 0V5" />
+            <path d="M3 12a9 3 0 0 0 18 0" />
+          </svg>
+          MinIO
+        </div>
+        <div class="provider-logo">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <rect width="20" height="8" x="2" y="2" rx="2" ry="2" />
+            <rect width="20" height="8" x="2" y="14" rx="2" ry="2" />
+            <line x1="6" x2="6.01" y1="6" y2="6" />
+            <line x1="6" x2="6.01" y1="18" y2="18" />
+          </svg>
+          Backblaze B2
+        </div>
+        <div class="provider-logo">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z" />
+          </svg>
+          DigitalOcean Spaces
+        </div>
+        <div class="provider-logo">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="10" />
+            <path d="M2 12h20" />
+            <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
+          </svg>
+          &amp; Other S3-Compatible
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ===== Tech Stack ===== -->
-  <section class="tech" id="tech">
+  <!-- ===== Pricing ===== -->
+  <section class="pricing" id="pricing">
     <div class="container">
       <div class="section-header reveal">
-        <span class="section-label">Built With</span>
-        <h2>Modern Tech Stack</h2>
-        <p>Powered by a robust, modern stack trusted by millions of developers worldwide.</p>
+        <span class="section-label">Pricing</span>
+        <h2>Simple, One-Time Licensing</h2>
+        <p>Try every feature free for 30 days. Love it? Unlock UniBucket permanently with a single purchase — no
+          recurring subscriptions.</p>
       </div>
-      <div class="tech-grid reveal">
-        <div class="tech-badge">
-          <svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22">
-            <path d="M12 2L1 21h22L12 2zm0 3.99L19.53 19H4.47L12 5.99z" />
-          </svg>
-          Electron
+      <div class="pricing-grid reveal">
+        <div class="pricing-card">
+          <div class="pricing-header">
+            <h3>30-Day Free Trial</h3>
+            <p class="pricing-tagline">Full access to explore with your own buckets</p>
+            <div class="pricing-price">Free</div>
+            <span class="pricing-sub">No credit card required</span>
+          </div>
+          <ul class="pricing-list">
+            <li>All features unlocked for 30 days</li>
+            <li>AWS S3, Google Cloud Storage &amp; S3-compatible</li>
+            <li>Built-in code, Markdown &amp; metadata editors</li>
+            <li>Windows, macOS &amp; Linux</li>
+          </ul>
+          <a href="#download" class="btn btn-secondary pricing-cta">Download Free Trial</a>
         </div>
-        <div class="tech-badge">
-          <svg viewBox="0 0 24 24" fill="#61DAFB" width="22" height="22">
-            <circle cx="12" cy="12" r="2.4" />
-            <ellipse cx="12" cy="12" rx="10.5" ry="4" fill="none" stroke="#61DAFB" stroke-width="1" />
-            <ellipse cx="12" cy="12" rx="10.5" ry="4" fill="none" stroke="#61DAFB" stroke-width="1"
-              transform="rotate(60 12 12)" />
-            <ellipse cx="12" cy="12" rx="10.5" ry="4" fill="none" stroke="#61DAFB" stroke-width="1"
-              transform="rotate(120 12 12)" />
-          </svg>
-          React
+
+        <div class="pricing-card featured">
+          <span class="pricing-badge">No Subscription</span>
+          <div class="pricing-header">
+            <h3>UniBucket Pro</h3>
+            <p class="pricing-tagline">Pay once, own it for your workflow</p>
+            <div class="pricing-price">One-Time</div>
+            <span class="pricing-sub">Secure checkout via Polar</span>
+          </div>
+          <ul class="pricing-list">
+            <li>Everything in the free trial, permanently unlocked</li>
+            <li>Use your license key across Windows, macOS &amp; Linux</li>
+            <li>Offline-friendly license validation</li>
+            <li>All future 0.x / 1.x updates included</li>
+          </ul>
+          <a href="https://buy.polar.sh/polar_cl_kUsV6vewgustW7Z8kqILKCMUCdCJKwEuduFAS2sFieV" class="btn btn-primary pricing-cta"
+            target="_blank" rel="noopener">Buy License</a>
         </div>
-        <div class="tech-badge">
-          <svg viewBox="0 0 24 24" fill="#3178C6" width="22" height="22">
-            <path
-              d="M1.125 0C.502 0 0 .502 0 1.125v21.75C0 23.498.502 24 1.125 24h21.75c.623 0 1.125-.502 1.125-1.125V1.125C24 .502 23.498 0 22.875 0H1.125zm17.363 9.75c.612 0 1.154.037 1.627.111a6.38 6.38 0 0 1 1.306.34v2.458a3.95 3.95 0 0 0-.643-.361 5.093 5.093 0 0 0-.717-.26 5.453 5.453 0 0 0-1.426-.2c-.3 0-.573.028-.819.086a2.1 2.1 0 0 0-.623.242c-.17.104-.3.229-.393.374a.888.888 0 0 0-.14.49c0 .196.053.373.156.529.104.156.252.304.443.444s.42.276.69.394.57.232.89.34c.39.13.753.274 1.09.433.337.158.632.347.882.566.25.22.445.48.585.782.14.3.21.662.21 1.084 0 .508-.105.944-.316 1.308-.21.364-.498.662-.862.894-.364.232-.8.402-1.302.51-.502.108-1.043.162-1.623.162-.734 0-1.39-.06-1.967-.18a5.22 5.22 0 0 1-1.566-.545v-2.636a5.06 5.06 0 0 0 .774.498 5.96 5.96 0 0 0 .876.364c.312.106.63.18.954.222.324.042.614.063.87.063.298 0 .564-.024.797-.072.232-.048.424-.12.574-.214.15-.094.264-.212.342-.354a.944.944 0 0 0 .118-.468c0-.2-.062-.383-.184-.544a2.007 2.007 0 0 0-.504-.426 5.648 5.648 0 0 0-.756-.366 22.14 22.14 0 0 0-.944-.358c-.37-.126-.72-.27-1.048-.43a3.85 3.85 0 0 1-.862-.584c-.244-.23-.436-.5-.576-.812a2.703 2.703 0 0 1-.21-1.096c0-.466.105-.878.314-1.236.21-.358.49-.66.84-.908a4.131 4.131 0 0 1 1.228-.584 5.295 5.295 0 0 1 1.48-.202zm-9.608.114v1.9H5.543v8.487H3.535v-8.487H.198v-1.9h8.682z"
-              transform="scale(.875) translate(1.7 1.7)" />
-          </svg>
-          TypeScript
-        </div>
-        <div class="tech-badge">
-          <svg viewBox="0 0 24 24" fill="#646CFF" width="22" height="22">
-            <path d="m12.009 1.008 10.894 6.287v12.574L12.009 23.16 1.116 19.869V7.295l10.893-6.287z" />
-          </svg>
-          Vite
-        </div>
-        <div class="tech-badge">
-          <svg viewBox="0 0 24 24" fill="#06B6D4" width="22" height="22">
-            <path
-              d="M12.001 4.8c-3.2 0-5.2 1.6-6 4.8 1.2-1.6 2.6-2.2 4.2-1.8.913.228 1.565.89 2.288 1.624C13.666 10.618 15.027 12 18.001 12c3.2 0 5.2-1.6 6-4.8-1.2 1.6-2.6 2.2-4.2 1.8-.913-.228-1.565-.89-2.288-1.624C16.337 6.182 14.976 4.8 12.001 4.8zm-6 7.2c-3.2 0-5.2 1.6-6 4.8 1.2-1.6 2.6-2.2 4.2-1.8.913.228 1.565.89 2.288 1.624 1.177 1.194 2.538 2.576 5.512 2.576 3.2 0 5.2-1.6 6-4.8-1.2 1.6-2.6 2.2-4.2 1.8-.913-.228-1.565-.89-2.288-1.624C10.337 13.382 8.976 12 6.001 12z" />
-          </svg>
-          TailwindCSS
-        </div>
-        <div class="tech-badge">
-          <svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22">
-            <path
-              d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z" />
-          </svg>
-          Shadcn UI
-        </div>
-        <div class="tech-badge">
-          <svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22">
-            <path
-              d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm0 2c1.33 0 2.57.36 3.62 1H8.38A7.94 7.94 0 0 1 12 4zm-3 3h6l-3 5.5L9 7zm-4.97 3A7.9 7.9 0 0 1 5.6 7.5L8.6 13l-5.56-1.46c-.01-.18-.04-.36-.04-.54 0-.34.02-.68.03-1zm.57 3l5.5 1.45L6.55 17A7.93 7.93 0 0 1 4.6 13zm2.8 5h4.6L12 16l-2.8 3c-.4-.3-.78-.63-1.13-1h.53zM12 20c-1.2 0-2.32-.3-3.32-.83L12 14.5l3.32 4.67c-1 .53-2.12.83-3.32.83zm5.45-3l-3.55-2.55 5.5-1.45a7.93 7.93 0 0 1-1.95 4zm1.52-5c0 .18-.03.36-.04.54L13.4 13l3-5.5a7.9 7.9 0 0 1 1.57 2.5c.01.32.03.66.03 1z" />
-          </svg>
-          Zustand
-        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FAQ ===== -->
+  <section class="faq" id="faq">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">FAQ</span>
+        <h2>Frequently Asked Questions</h2>
+      </div>
+      <div class="faq-list reveal">
+        <details class="faq-item">
+          <summary>What happens when my 30-day free trial ends?</summary>
+          <p>Your cloud files, buckets, and saved accounts remain completely untouched. Once the 30-day trial expires,
+            simply enter a license key to unlock UniBucket and pick up right where you left off.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Which cloud storage providers are supported?</summary>
+          <p>UniBucket supports AWS S3, Google Cloud Storage, and any S3-compatible object storage service — including
+            Cloudflare R2, MinIO, Backblaze B2, DigitalOcean Spaces, Wasabi, and self-hosted S3 endpoints.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Is UniBucket a subscription or a one-time purchase?</summary>
+          <p>UniBucket is a one-time purchase with no recurring subscription fees. You can activate your license key
+            directly inside the app on Windows, macOS, or Linux, and deactivate a device anytime if you switch
+            machines.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Are my cloud credentials and files sent to LinkFuture servers?</summary>
+          <p>No. UniBucket is local-first: your credentials are encrypted locally using your operating system's secure
+            storage, and all file transfers happen directly between your computer and your cloud provider. We never see
+            your keys, buckets, or files.</p>
+        </details>
       </div>
     </div>
   </section>
@@ -438,7 +478,7 @@
         <h2>Ready to simplify your cloud storage?</h2>
         <p>Start your 30-day free trial and manage all your buckets from one place. No credit card required.</p>
         <div class="download-buttons">
-          <a href="https://github.com/LinkFuture/UniBucket-Releases/releases" class="download-btn" id="download-win" target="_blank"
+          <a href="https://github.com/LinkFuture/linkfuture.github.io/releases" class="download-btn" id="download-win" target="_blank"
             rel="noopener">
             <svg viewBox="0 0 24 24" fill="currentColor">
               <path
@@ -446,15 +486,23 @@
             </svg>
             <span>Windows<span class="btn-small">Windows 10 / 11 (x64)</span></span>
           </a>
-          <a href="https://github.com/LinkFuture/UniBucket-Releases/releases" class="download-btn" id="download-mac" target="_blank"
+          <a href="https://github.com/LinkFuture/linkfuture.github.io/releases" class="download-btn" id="download-mac-arm64" target="_blank"
             rel="noopener">
             <svg viewBox="0 0 24 24" fill="currentColor">
               <path
                 d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z" />
             </svg>
-            <span>macOS<span class="btn-small">Apple Silicon &amp; Intel</span></span>
+            <span>macOS<span class="btn-small">Apple Silicon (arm64)</span></span>
           </a>
-          <a href="https://github.com/LinkFuture/UniBucket-Releases/releases" class="download-btn" id="download-linux" target="_blank"
+          <a href="https://github.com/LinkFuture/linkfuture.github.io/releases" class="download-btn" id="download-mac-x64" target="_blank"
+            rel="noopener">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z" />
+            </svg>
+            <span>macOS<span class="btn-small">Intel (x64)</span></span>
+          </a>
+          <a href="https://github.com/LinkFuture/linkfuture.github.io/releases" class="download-btn" id="download-linux" target="_blank"
             rel="noopener">
             <svg viewBox="0 0 24 24" fill="currentColor">
               <path
@@ -479,13 +527,12 @@
       <ul class="footer-links">
         <li><a href="about.html">About Us</a></li>
         <li><a href="privacy.html">Privacy Policy</a></li>
-        <li><a href="https://github.com/LinkFuture/UniBucket-Releases" target="_blank" rel="noopener">GitHub</a></li>
-        <li><a href="https://github.com/LinkFuture/UniBucket-Releases/releases" target="_blank"
+        <li><a href="https://github.com/LinkFuture/linkfuture.github.io/releases" target="_blank"
             rel="noopener">Releases</a></li>
-        <li><a href="https://github.com/LinkFuture/UniBucket-Releases/issues" target="_blank" rel="noopener">Issues</a>
+        <li><a href="https://github.com/LinkFuture/linkfuture.github.io/issues" target="_blank" rel="noopener">Issues</a>
         </li>
       </ul>
-      <p class="footer-copy">&copy; 2026 Linkfuture LLC</p>
+      <p class="footer-copy">&copy; <span class="copyright-year">2026</span> LinkFuture LLC</p>
     </div>
   </footer>
 
